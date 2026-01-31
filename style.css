@@ -26,3 +26,54 @@ body {
   border-radius: 10px;
   text-align: center;
 }
+
+.quote-box h2 {
+  font-size: 31px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.quote-box blockquote::after {
+  content: " ";
+  width: 75px;
+  height: 3px;
+  border-radius: 5px;
+  background: #dc95c9;
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.quote-box blockquote {
+  font-size: 26px;
+  min-height: 110px;
+  position: relative;
+  line-height: 1.4;
+  margin-bottom: 30px;
+}
+
+.quote-box blockquote::before {
+  content: "“";
+}
+
+.quote-box blockquote::after {
+  content: "”";
+}
+
+.quote-box span {
+  display: block;
+  margin-top: 10px;
+  float: right;
+  position: relative;
+}
+
+.quote-box span::before {
+  content: " ";
+  width: 20px;
+  height: 2px;
+  background: #150812;
+  position: absolute;
+  top: 50%;
+  left: -30px;
+}
